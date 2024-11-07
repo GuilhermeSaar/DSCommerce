@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 @SpringBootApplication
-public class DscommerceApplication implements CommandLineRunner {
+public class DscommerceApplication {
 
 	@Autowired
 	private PasswordEncoder passwordEncoder;
@@ -16,10 +16,5 @@ public class DscommerceApplication implements CommandLineRunner {
 		SpringApplication.run(DscommerceApplication.class, args);
 	}
 
-	@Override
-	public void run(String... args) throws Exception {
 
-		System.out.println("ENCODE: " + passwordEncoder.encode("123456"));
-
-	}
 }
