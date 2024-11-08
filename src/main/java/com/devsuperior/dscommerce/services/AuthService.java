@@ -17,7 +17,5 @@ public class AuthService {
         if (!me.hasRole("ROLE_ADMIN") && !me.getId().equals(userId)) {
             throw new ForbidenException("Access denied");
         }
-
     }
-
 }
